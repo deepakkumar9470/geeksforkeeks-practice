@@ -1,5 +1,7 @@
 #include<iostream>
 #include <string>
+#include <math.h>
+#include <vector>
 
 using namespace std;
 
@@ -87,23 +89,195 @@ using namespace std;
 // Explanation: The vowels are a, i, e
 // Reverse of these is e, i, a.
 
+
 //  int main(){
 
-//     string s = "practice";
-//     string res ="";
+//     string str = "hello";
+//     int n   = str.length();
 
-
-//     for (int i = 0; i < s.length(); i++)
+//     string vowel="";
+//     for (int i = 0; i < n; i++)
 //     {
-//         if(s[i] != 'a' || s[i] != 'e' || s[i] !='i' || s[i]!='o' || s[i]!='u'){
-//               return false;
-//         }else{
-
-//             if(s[i] != s[s.length()-1-i]){
-//                 res += s[i];
-//             }
+//         if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u'){
+//              vowel +=str[i];
+//              str[i] = '.';
 //         }
 //     }
-//     return res;
+
+//      int i = str.length () - 1;
+//      int j = 0;
+//      while (i>=0)
+//     {
+//         if(str[i] ='.'){
+//             str[i] = vowel[j++];
+//             i--;
+//         }
+//     }
+//     // return str;
+//     return 0;
+    
     
 // }
+
+
+
+/********** Upper case conversion (Convert each word into uppercase in string)  **********/
+// Nagrro
+// Input: str = "i love programming"
+// Output: "I Love Programming"
+// Explanation:
+// 'I', 'L', 'P' are the first letters of 
+// the three words.
+
+// Javascript
+
+// function upperStr(str){
+      
+//       str = str.split(' ')
+//       for (let i = 0; i < str.length; i++)
+//       {
+//             str[i] = str[i][0].toUpperCase() +  str[i][0].substr(1)
+//       }
+
+//       return str;
+      
+// }
+
+
+/********** Given a string. Count the number of Camel Case characters in it.  **********/
+
+// Input: // S = "ckjkUUYII"
+// Output: 5
+// Explanation: Camel Case characters present:
+// U, U, Y, I and I.
+
+
+// int main(){
+//     string str = "ckjkUUYII";
+
+//     int count = 0;
+
+//     for (int i = 0; i < str.length(); i++)
+//     {
+//         if(str[i] >= 'A' && str[i] <= 'Z'){
+//             count++;
+//         }
+//     }
+    
+
+//     return count;
+// }
+
+
+
+
+/********** Remove vowels from string **********/
+
+// Input: S = "welcome to geeksforgeeks"
+// Output: wlcm t gksfrgks
+// Explanation: Ignore vowels and print other
+// characters 
+
+// int main(){
+//     string S = "welcome to geeksforgeeks";
+  
+    
+//     vector<char> vowels=  {'a','e','o','o','u', 'A','E','I','O','U'};
+
+
+//     for (int i = 0; i < S.length(); i++)
+//     {
+//         if(find(vowels.begin(), vowels.end(), S[i]) != vowels.end()){
+//               S = S.replace(i, 1, "");
+//             i -= 1;
+//         }
+//     }
+
+//      return S;
+// }
+
+
+
+
+
+
+/********** Given a string, check if all its characters are same or not **********/
+
+// Input: // s = "geeks"
+// Output: NO
+// Explanation: The string contains different
+// character 'g', 'e', 'k' and 's'.
+
+
+// int main(){
+//    string s = "geeks";
+
+//    char ch = s[0];
+
+   
+//    for(int i=1;i<s.size();i++){
+       
+//        if(s[i] != ch){
+//            return false;
+//        }
+//    }
+//    return true;
+
+// }
+
+
+
+/********** Count type of Characters **********/
+// Amzon , Makemytrip
+
+// Input: // S = "#GeeKs01fOr@gEEks07"
+// Output:
+// 5
+// 8
+// 4
+// 2
+// Explanation: There are 5 uppercase characters,
+// 8 lowercase characters, 4 numeric characters
+// and 2 special characters.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********** Remove characters from alphanumeric string **********/
+
+
+// Input: S = "AA1d23cBB4"
+// Output: 1234
+// Explanation: Remove all chacactres 
+// other than numbers
+
+// int main(){
+//     string s = "AA1d23cBB4";
+
+//     int j = 0;
+//     for (int i = 0; i < s.size(); i++)
+//     {
+//         if('0' <= s[i] && s[i] <='9'){
+//               s[j++] = s[i];
+//         }
+//     }
+    
+//     return s.substr(0,j);
+// }
+
+
+
+
+
