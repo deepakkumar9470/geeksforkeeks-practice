@@ -281,3 +281,33 @@ using namespace std;
 
 
 
+
+
+/********** Front-Back Transformation - copy **********/
+
+// Input: S = "Hello"
+// Output: Svool
+// Explanation: 'H' is the 8th letter from the
+// beginning of alphabets, which is replaced by
+// 'S' which comes at 8th position in reverse order
+// of alphabets. Similarly, all other letters are 
+// replaced by their respective upper or lower case 
+// letters accordingly.
+
+// int main(){
+     
+//      string s = "Hello";
+//      string str="";
+//     for(int i=0;i<s.size();i++){
+        
+//            if(s[i] >='a' && s[i]<='z'){
+//                str += (char)('z'- (s[i] - 'a'));
+//            }else{
+//                 str += (char)('Z'- (s[i] - 'A'));
+//            }
+//     }
+//     return str;
+  
+// }
+
+
