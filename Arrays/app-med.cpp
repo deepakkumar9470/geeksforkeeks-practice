@@ -331,27 +331,99 @@ x and y.  **********/
 // Rotate by 1: [2, 3, 4, 5, 6, 7, 1]
 // Rotate by 2: [3, 4, 5, 6, 7, 1, 2]
 
-void reverseArr(int arr[], int low, int high){
+// void reverseArr(int arr[], int low, int high){
 
-    while (low < high)
-    {
-        swap(arr[low], arr[high]);
-        low ++;
-        high--;
-    }
+//     while (low < high)
+//     {
+//         swap(arr[low], arr[high]);
+//         low ++;
+//         high--;
+//     }
     
-}
+// }
 
 
-int main(){
-     int arr[] = {1, 2, 3, 4, 5, 6, 7};
-     int n  = sizeof(arr) / sizeof(arr[0]);
+// int main(){
+//      int arr[] = {1, 2, 3, 4, 5, 6, 7};
+//      int n  = sizeof(arr) / sizeof(arr[0]);
 
-     int d = 3;
+//      int d = 3;
       
-     reverseArr(0,n-d-1,0);
+//      reverseArr(0,n-d-1,0);
      
 
-     return 0;
+//      return 0;
 
+// }
+
+
+
+
+/********** Convert array into Zig-Zag fashion  **********/
+
+// Amazon , Paytm
+// Input: N = 7 Arr[] = {4, 3, 7, 8, 6, 2, 1}
+// Output: 3 7 4 8 2 6 1
+// Explanation: 3 < 7 > 4 < 8 > 2 < 6 > 
+
+// int main(){
+//   int arr[] = {4, 3, 7, 8, 6, 2, 1};
+//   int n = sizeof(arr) / sizeof(arr[0]);
+
+//   bool greater = false;
+
+//   for (int i = 0; i < n; i++)
+//   {
+//       if((greater && arr[i] <  arr[i+1]) || (!greater && arr[i] >  arr[i+1])){
+//         swap(arr[i], arr[i+1]);
+//       }
+
+//       if(greater) greater = false;
+//       else greater = true; 
+//   }
+
+  
+
+//   return 0;
+// }
+
+
+
+
+
+/********** Third largest element  **********/
+// Amazon , Microsoft
+// Input: N = 5 , A[] = {2,4,1,3,5} ,Output: 3
+
+int main(){
+  int arr[] = {2,4,1,3,5};
+  int n = sizeof(arr) / sizeof(arr[0]);
+
+      int firstLarge = max(arr[0],arr[1]);
+      int secLarge = min(arr[0],arr[1]);
+      int thirdLarge=INT_MIN;
+
+
+      for(int i=2;i<n;i++)
+            {
+        
+              if(arr[i]>thirdLarge)
+              {
+                      thirdLarge = arr[i];
+              }
+              if(arr[i]>secLarge)
+              {
+                  thirdLarge = secLarge;
+                  secLarge = arr[i];
+              }
+              if(arr[i]>firstLarge)
+              {
+                  secLarge = firstLarge;
+                  firstLarge = arr[i];
+              }
+            }
+
+        cout<<thirdLarge;
+
+  return 0;
 }
