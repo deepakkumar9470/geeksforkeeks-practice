@@ -395,35 +395,138 @@ x and y.  **********/
 // Amazon , Microsoft
 // Input: N = 5 , A[] = {2,4,1,3,5} ,Output: 3
 
-int main(){
-  int arr[] = {2,4,1,3,5};
-  int n = sizeof(arr) / sizeof(arr[0]);
+// int main(){
+//   int arr[] = {2,4,1,3,5};
+//   int n = sizeof(arr) / sizeof(arr[0]);
 
-      int firstLarge = max(arr[0],arr[1]);
-      int secLarge = min(arr[0],arr[1]);
-      int thirdLarge=INT_MIN;
+//       int firstLarge = max(arr[0],arr[1]);
+//       int secLarge = min(arr[0],arr[1]);
+//       int thirdLarge=INT_MIN;
 
 
-      for(int i=2;i<n;i++)
-            {
+//       for(int i=2;i<n;i++)
+//             {
         
-              if(arr[i]>thirdLarge)
-              {
-                      thirdLarge = arr[i];
-              }
-              if(arr[i]>secLarge)
-              {
-                  thirdLarge = secLarge;
-                  secLarge = arr[i];
-              }
-              if(arr[i]>firstLarge)
-              {
-                  secLarge = firstLarge;
-                  firstLarge = arr[i];
-              }
-            }
+//               if(arr[i]>thirdLarge)
+//               {
+//                       thirdLarge = arr[i];
+//               }
+//               if(arr[i]>secLarge)
+//               {
+//                   thirdLarge = secLarge;
+//                   secLarge = arr[i];
+//               }
+//               if(arr[i]>firstLarge)
+//               {
+//                   secLarge = firstLarge;
+//                   firstLarge = arr[i];
+//               }
+//             }
 
-        cout<<thirdLarge;
+//         cout<<thirdLarge;
 
-  return 0;
-}
+//   return 0;
+// }
+
+
+
+
+
+/********** Replace all 0's with 5 **********/
+// Amazon
+// Input: N = 1004,  Output: 1554
+// Explanation: There are two zeroes in 1004
+// on replacing all zeroes with "5", the new
+// number will be "1554".
+
+// int convert(int num){
+
+//   if(num == 0){
+//     return 5;
+//   }
+
+//   return convert(num);
+// }
+// int main(){
+   
+//    int N = 1004;
+//    int digit  = N % 10;
+//    if(digit){
+//     digit = 5;
+//    }
+
+//    return convert(N/10) * 10 + digit;
+
+  
+// }
+
+
+
+
+
+
+/********** Elements in the Range 
+  Given an array arr[] containing positive elements. A and B are two numbers defining a
+   range.The task is to check if the array contains all elements in the given range.**********/
+
+// Amazon
+
+// Input: N = 7, A = 2, B = 5, arr[] =  {1, 4, 5, 2, 7, 8, 3}
+// Output: Yes
+// Explanation: It has elements between 
+// range 2-5 i.e 2,3,4,5
+
+
+
+// int main(){
+
+//   int arr[] =  {1, 4, 5, 2, 7, 8, 3};
+//   int n = sizeof(arr) / sizeof(arr[0]);
+
+  
+//   int A = 2, B = 7;
+
+//     int range = B-A;
+// 		for (int i = 0; i < n; i++) {
+
+// 			if ((abs(arr[i])) >= A && (abs(arr[i])) <= B) {
+
+// 				int z = abs(arr[i]) - A;
+// 				if (z<n && arr[z] > 0) {
+// 					arr[z] = arr[z] * -1;
+// 				}
+// 			}
+// 		}
+// 		int count=0;
+// 		for (int i = 0; i <= range && i<n; i++) {
+
+// 			if (arr[i] > 0)
+// 				return false;
+// 			else
+// 				count++;
+// 		}
+// 		if(count!= (range+1))
+// 			return false;
+      
+// 		// return true;
+
+//     cout<<range<<endl;
+
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
