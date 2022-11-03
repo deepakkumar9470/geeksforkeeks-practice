@@ -3,6 +3,7 @@
 #include <math.h>
 #include <vector>
 #include <limits.h>
+#include<stdlib.h>
 std::vector<int> arr;
 using namespace std;
 
@@ -516,17 +517,127 @@ x and y.  **********/
 // }
 
 
+/********** Sort an array of 0s, 1s and 2s : Given an array of size N containing only 0s, 1s, and 2s; 
+    sort the array in ascending order. **********/
+
+// Amazon , Adobe
+
+// Input:  N = 5
+// arr[]= {0 2 1 2 0}
+// Output:
+// 0 0 1 2 2
+// Explanation:
+// 0s 1s and 2s are segregated 
+// into ascending order.
+
+// int main(){  
+//   int arr[]= {0 ,2 ,1, 2, 0};
+//   int n = sizeof(arr) / sizeof(arr[0]);
+   
+//    int low = 0;
+//    int mid = 0;
+//    int high = n-1;
+
+//     while (mid<=high)
+//     {
+//        if(arr[mid] == 0){
+//         swap(arr[low], arr[mid]);
+//         low++;
+//         mid++;
+//        }
+//        else if(arr[mid] == 1){
+//            mid++;
+//        }
+//        else{
+//         swap(arr[mid], arr[high]);
+//         high--;
+//        }
+//     }
+    
+//    for (int i = 0; i < n; i++)
+//    {
+//       cout<<arr[i]<<" ";
+//    }
+   
+// }
 
 
 
+/********** Find duplicates in an array **********/
+// Amazon , D-E-SHAW
+
+// Input:  N = 4,  a[] = {0,3,1,2}
+// Output: -1
+// Explanation: N=4 and all elements from 0
+// to (N-1 = 3) are present in the given
+// array. Therefore output is -1.
+
+// int main(){
+
+//   int arr[]= {0 ,2 ,1, 2, 0};
+//   int n = sizeof(arr) / sizeof(arr[0]);
+
+//          for(int i=0;i<n;i++){
+             
+//              int index = arr[i] % n;
+//              arr[index] += n;
+//          }
+
+//          vector<int> ans;
+         
+//          for(int i=0;i<n;i++){
+//               if(arr[i] / n > 1){
+//                   ans.push_back(i);
+                  
+//               }
+//          }
+//          if(ans.size()==0) return {-1};
+//         return ans;
+// }
 
 
 
+/********** Peak Element
+ An element is called a peak element if its value is not smaller than the value of its adjacent elements(if they exists).
+Given an array arr[] of size N, Return the index of any one of its peak elements.
+Note: The generated output will always be 1 if the index that you return is correct. Otherwise output will be 0. 
+ **********/
+
+// Amazon , Adobe
 
 
+// Input:  N = 3, arr[] = {1,2,3}
+// Possible Answer: 2
+// Generated Output: 1
+// Explanation: index 2 is 3.
+// It is the peak element as it is 
+// greater than its neighbour 2.
+// If 2 is returned then the generated output will be 1 else 0
 
 
+// int main(){
+
+//   int arr[] = {1,2,3};
+//   int n = sizeof(arr) / sizeof(arr[0]);
+
+//   int low = 0;
+//   int high = n-1;
+//   while (low <= high)
+//   {
+//     int mid = (low+high)/2;
+
+//     if((mid == 0 || arr[mid] >= arr[mid-1]) && (mid == 1 || arr[mid] >= arr[mid+1])){
+//       return mid;
+//     }else if(arr[mid] <= arr[mid+1]){
+//       low = mid+1;
+//     }else{
+//         high = mid-1;
+//     }
+//   }
+
+//   cout<<arr<<" ";
+  
 
 
-
-
+//   return 0;
+// }
