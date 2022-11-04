@@ -6,6 +6,7 @@
 #include<stdlib.h>
 std::vector<int> arr;
 using namespace std;
+#include <map>
 
 
 
@@ -634,10 +635,95 @@ Note: The generated output will always be 1 if the index that you return is corr
 //         high = mid-1;
 //     }
 //   }
-
 //   cout<<arr<<" ";
   
 
 
 //   return 0;
 // }
+
+
+
+
+
+
+
+/********** Kth smallest element Find the kth smallest element in array **********/
+//ABCO Accolite
+// Input: N = 6, arr[] = 7 10 4 3 20 15, K = 3
+// Output : 7
+// Explanation :
+// 3rd smallest element in the given  array is 7.
+
+// int main(){
+
+//   int arr[] = {7 ,10 ,4, 3, 20 ,15};
+//   int n = sizeof(arr) / sizeof(arr[0]);
+//   int k = 3;
+
+//   // int pivot = (l-r) / 10;
+
+//  sort(arr,arr+n);
+//   for (int i = 0; i < n; i++)
+//   {
+    
+//         cout<<arr[k-1];
+    
+//   }
+  
+//   return 0;
+// }
+
+
+
+
+/*********** Majority Element
+ Given an array A of N elements. Find the majority element in the array.
+  A majority element in an array A of size N is an 
+  element that appears more than N/2 times in the array.  **********/
+
+// Amazon , Accolite
+
+// Input: N = 3 A[] = {1,2,3} 
+// Output:
+// -1
+// Explanation:
+// Since, each element in 
+// {1,2,3} appears only once so there 
+// is no majority element.
+
+// int main(){
+
+//   int a[] = {1,2,3} ;
+//   int size = sizeof(arr) / sizeof(arr[0]);
+//    map<int,int>mp;
+//         for(int i=0;i<size;i++){
+            
+//             mp[a[i]]++;
+//             if(mp[a[i]] > size/2){
+//                 return a[i];
+//             }
+//         }
+      
+//         return -1;
+// }
+
+
+/**********  Smallest Positive Number **********/
+
+// Amazon, Accolite
+
+
+// int main(){
+
+//   int a[] = {1,2,3,5} ;
+//   int size = sizeof(arr) / sizeof(arr[0]);
+ 
+      
+//   return 0;
+// }
+
+
+
+
+
