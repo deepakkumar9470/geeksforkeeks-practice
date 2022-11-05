@@ -727,3 +727,55 @@ Note: The generated output will always be 1 if the index that you return is corr
 
 
 
+/**********  Integer to words : Write a function to convert given number into words **********/
+
+// Amazon, Microsoft
+
+// Input:  N = 45
+// Output : Forty Five
+
+// string converToWrd(int n , string s){
+   
+//    string ans = "";
+//    if(n<20){
+//     ans +=one[n];
+//    }
+//    if(n<10){
+//     ans +=ten[n/10] + one[n%10];
+//    }
+//    if(n) ans +=s;
+//    return ans;
+
+     
+// }
+
+// int main(){
+
+    //  string one[20] = {"",         "one ",     "two ",       "three ",    "four ",
+    //                 "five ",    "six ",     "seven ",     "eight ",    "nine ",
+    //                 "ten ",     "eleven ",  "twelve ",    "thirteen ", "fourteen ",
+    //                 "fifteen ", "sixteen ", "seventeen ", "eighteen ", "nineteen "};
+
+    // string ten[10] = {"",       "",       "twenty ",  "thirty ", "forty ",
+    //                 "fifty ", "sixty ", "seventy ", "eighty ", "ninety "};
+  // string result;
+  // result +=converToWrd((n/10000000), "crore");
+  // result +=converToWrd((n/100000) % 100, "lakh");
+  // result +=converToWrd((n/1000) % 100, "thousand");
+  // result +=converToWrd((n/100) % 10, "hundred");
+
+  //  if (n > 100 && n % 100) result += "and ";
+  
+  // result +=converToWrd((n%100), "");
+  // return result;
+
+ 
+      
+//   return 0;
+// }
+
+
+
+
+
+
