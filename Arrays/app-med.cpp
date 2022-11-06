@@ -779,3 +779,166 @@ Note: The generated output will always be 1 if the index that you return is corr
 
 
 
+
+
+
+/**********  Complement **********/
+
+// Amazon
+
+// Input: N = 3, str = "111"
+// Output: -1
+// Explanation: As all characters are '1', 
+// so don't need to complement any.
+
+// char convertTo(char c){
+//   if(
+//     c == "0" ? "1" : "0";
+//   )
+// }
+
+// int main(){
+
+//      string str = "111";
+
+//      int n = str.length()
+//      string ans = "";
+
+//      for (int i = 0; i < n; i++)
+//      {
+
+//           if(str[i] == "0") {
+//             ans += "1";
+//           }else{
+//             ans  += "0";
+//           }
+         
+//      }
+//      cout<<ans;
+     
+      
+//     return 0;
+// }
+
+
+
+/**********  Distribute N candies among K people **********/
+
+// Amazon,Microsoft
+
+
+// void candies(int n, int k){
+
+//   int count = 0;
+//   int ind= 1;
+//   int arr[k];
+
+
+//  memset(arr, 0, sizeof(arr));
+ 
+//     while (n) {
+ 
+//         // Last term of last and
+//         // current series
+//         int f1 = (ind - 1) * k;
+//         int f2 = ind * k;
+ 
+//         // Sum of current and last  series
+//         int sum1 = (f1 * (f1 + 1)) / 2;
+//         int sum2 = (f2 * (f2 + 1)) / 2;
+ 
+//         // Sum of current series only
+//         int res = sum2 - sum1;
+ 
+//         // If sum of current is less than N
+//         if (res <= n) {
+//             count++;
+//             n -= res;
+//             ind++;
+//         }
+//         else // Individually distribute
+//         {
+//             int i = 0;
+ 
+//             // First term
+//             int term = ((ind - 1) * k) + 1;
+ 
+//             // Distribute candies till there
+//             while (n > 0) {
+ 
+//                 // Candies available
+//                 if (term <= n) {
+//                     arr[i++] = term;
+//                     n -= term;
+//                     term++;
+//                 }
+//                 else // Not available
+//                 {
+//                     arr[i++] = n;
+//                     n = 0;
+//                 }
+//             }
+//         }
+//     }
+//   {
+//         int f1 = (ind - 1) * k;
+//         int f2 = ind * k;
+        
+//         // Sum of current and last  series
+//         int sum1 = (f1 * (f1 + 1)) / 2;
+//         int sum2 = (f2 * (f2 + 1)) / 2;
+       
+//         int res = sum2 - sum1;
+
+//         if (res <= n) {
+//             count++;
+//             n -= res;
+//             ind++;
+//         }
+//         else // Individually distribute
+//         {
+//             int i = 0;
+ 
+//             // First term
+//             int term = ((ind - 1) * k) + 1;
+ 
+//             // Distribute candies till there
+//             while (n > 0) {
+ 
+//                 // Candies available
+//                 if (term <= n) {
+//                     arr[i++] = term;
+//                     n -= term;
+//                     term++;
+//                 }
+//                 else // Not available
+//                 {
+//                     arr[i++] = n;
+//                     n = 0;
+//                 }
+//             }
+//         }
+//     }
+ 
+//     // Count the total candies
+//     for (int i = 0; i < k; i++)
+//         arr[i] += (count * (i + 1))
+//                 + (k * (count * (count - 1)) / 2);
+ 
+//     // Print the total candies
+//     for (int i = 0; i < k; i++)
+//         cout << arr[i] << " ";
+ 
+  
+  
+  
+
+// }
+
+// int main(){
+
+//   int n = 10, k = 3;
+//   candies(n, k);
+
+//   return 0;
+// }
